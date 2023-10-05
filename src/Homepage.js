@@ -30,7 +30,10 @@ const Home = () => {
         </i>
                         </div>
                     </div>
+                    <small>Swap</small> 
                 </a>
+               
+               
                
                 <NavLink to="/value">
                     <div className="circle">
@@ -38,6 +41,7 @@ const Home = () => {
                            <i  style={{marginLeft: "10px"}} className='bx bx-arrow-from-bottom'></i>
                         </div>
                     </div>
+                    <small>Send</small> 
                 </NavLink>
                 
         
@@ -48,6 +52,7 @@ const Home = () => {
                             <i style={{marginLeft: "20px"}} className="bx bx-arrow-from-top"></i>
                         </div>
                     </div>
+                    <small>Receive</small> 
                 </a>
 
                 <a href="">
@@ -57,6 +62,7 @@ const Home = () => {
                             <i  style={{marginLeft: "20px"}}  class='bx bx-minus'></i>
                         </div>
                     </div>
+                    <small>Sell</small> 
                 </a>
             </div>
             <br/>

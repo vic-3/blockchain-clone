@@ -11,6 +11,15 @@ body {
   overflow-x:hidden;
    flex-direction: column; 
 }
+small{
+  font-size: 12px;
+}
+a:visited{
+  color:#000;
+}
+a{
+  text-decoration: none;
+}
 
 header {
    background-color: purple; 
