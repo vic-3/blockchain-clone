@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+  
+    font-family: 'Inter', sans-serif;
+
+  }
+
+  /* .container {
+    display: flex;
+    align-items: center;
+  } */
+
+  .display {
+    font-size: 24px;
+  }
+
+  .keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px 10px;
+  }
+
+  .key {
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .send-button {
+    width: 320px;
+    height: 35px;
+    background-color: #5d8dc0;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .send-button-2 {
+    width: 320px;
+    height: 35px;
+    background-color: #1a6aff;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .send-button-container {
+    display: flex; /* Display its children on the same line */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin-top: 20px; /* Add some top margin for spacing */
+  }
+
+  /*what i added to the css..................*/
+  .top {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .details {
+    display: flex;
+  }
+  .avail {
+    display: flex;
+  }
+  .key{
+    border:none
+  }
+  @media screen and (max-width: 767px) {
+    .container {
+    }
+  }

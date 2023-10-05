@@ -1,38 +1,363 @@
-.App {
-  text-align: center;
+body {
+  /*font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Use the Poppins font */
+  font-family: 'Inter', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container,body {
+   width: 100%;
+   height: 100%;
+   background-color: #f0f1f7;
+   overflow-y: scroll;
+  overflow-x:hidden;
+   flex-direction: column; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+   background-color: purple; 
+   color: #fff; 
+   padding: 10px;
+   border-top-right-radius: 20px;
+   border-top-left-radius: 20px;
+}
+.circle .icon i{
+  font-weight: 700;
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav {
+   
+   color: rgb(75, 73, 73);
+   padding: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+nav li {
+   list-style: none;
+   margin: 0;
+   padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav li:first-child {
+   margin-right: auto;
+}
+
+nav li:last-child {
+   margin-left: auto;
+}
+
+main {
+   flex-grow: 1;
+   padding: 5px;
+}
+
+#price {
+   margin-bottom: 5px;
+   text-align: center;
+}
+
+.price-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 10px;
+}
+
+.price-container h3 {
+   margin-right: 10px;
+}
+
+.icon-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+}
+
+.circle {
+   width: 40px;
+   height: 40px;
+   background-color: white;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 10px;
+}
+
+.icon {
+   font-size: 17px;
+   color: #000;
+   margin-right: 20px;
+   cursor: pointer;
+}
+
+
+
+.first {
+   width: 85%; /* Equal sides for a square */
+   height: 30vh; /* Equal sides for a square */
+   background-color: white;
+   border-radius: 15px; /* Border radius to create rounded corners */
+   padding: 20px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.first h1  {
+   font-size: 1rem;
+   line-height: 1.5rem;
+}
+
+.first p{
+   font-size: 0.8rem;
+}
+
+.first button{
+   width: 100%;
+   height: 5vh;
+   margin-top: 40px;
+   background-color: rgb(54, 54, 245);
+   border-radius: 20px;
+   border: none;
+   color: white;
+}
+
+
+
+
+       /* Additional styles for the white rectangle */
+       .security-box {
+           width: 85%; /* Equal sides for a square */
+           height: 40px; /* Equal sides for a square */
+           background-color: white;
+           border-radius: 10px; /* Border radius to create rounded corners */
+           padding: 20px;
+           text-align: center;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+       }
+       .security-boxy {
+           width: 290px; /* Equal sides for a square */
+           height: 40px; /* Equal sides for a square */
+           background-color: white;
+           border-radius: 10px; /* Border radius to create rounded corners */
+           padding: 20px;
+           text-align: center;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+       }
+
+       
+
+       .lock-icon {
+           color: brown;
+           font-size: 24px;
+           margin-top: 10px;
+           align-self: flex-start; /* Align the lock icon to the left edge */
+       }
+
+       .text {
+           font-size: 0.8rem;
+           font-weight: bold;
+           margin-top: -17px; /* Adjust the margin to control the gap */
+           text-align: center;
+           align-self: self-start;
+       }
+
+       .text1 {
+           font-size: 0.7rem;
+           align-self: self-start;
+           font-weight: bolder;
+           margin-top: 20px; /* Adjust the margin to control the gap */
+           text-align: center;
+       }
+       .text3 {
+           align-self: self-start;
+           font-weight: bold;
+           margin-top: 40px; 
+       }
+       .at {
+           align-self: self-start;
+           font-size: .9rem;
+           text-align: left;
+           color: #333;
+       }
+       
+       .ay {
+           align-self: self-start;
+           font-size: .9rem;
+           text-align: right;
+           color: rgb(54, 54, 245);
+
+       }
+       
+       /* Container for the at and ay divs */
+       .at-ay-container {
+           display: flex;
+           justify-content: space-between; /* Spread the divs apart, one to the left and one to the right */
+           align-items: center; /* Vertically align the content */
+           width: 100%; /* Ensure the container spans the entire width */
+       }
+       
+       /* Adjust margin if needed */
+       .at, .ay {
+           margin-bottom: 10px; /* Remove default margin to fine-tune spacing */
+       }
+
+
+
+       .blogs {
+           width: 270px; /* Equal sides for a square */
+           height: 40px; /* Equal sides for a square */
+           background-color: white;
+           border-radius: 15px; /* Border radius to create rounded corners */
+           box-shadow: 0 0 10px #f0f1f7;
+           padding: 20px;
+           display: flex;
+           flex-direction: column;
+           
+       }
+       .security-box{
+           border-radius: 0 0  !important;
+           border-bottom: 1px solid #f0f1f7
+       }
+       .security-box:first-child{
+           border-radius: 8px 8px 0 0 !important;
+       }
+       .security-box:last-child{
+           border-radius: 0 0 8px 8px !important;
+       }
+
+       .third{
+           width: 95%; /* Equal sides for a square */
+           height: 13vh; /* Equal sides for a square */
+           background-color: white;
+           border-radius: 15px; /* Border radius to create rounded corners */
+           box-shadow: 0 0 10px #f0f1f7;
+           margin: 10px;
+           text-align: justify;
+           display: flex;
+       }
+       .third .left{
+           width: 80%;
+       }
+       .third .right{
+           width: 20%;
+       }
+       .third h3{
+           font-size: 0.7rem;
+           font-weight: bold;
+           margin-left: 7px;
+           padding: 0px;
+           border: 0px;
+           text-align: none;
+           margin-bottom: 0px;
+           margin-top: 0px;
+       }
+       .third p{
+           font-size: 0.7rem;
+           color: rgb(92, 90, 90);
+           margin-left: 7px; 
+           margin-top: 0px;
+       }
+       
+       .third img{
+           width: 70%;
+           height: 6vh;
+           border-radius: 10px;
+           margin-top: 23px;
+           margin-left: 10px;
+       }
+       
+       
+       .navbar {
+           position: fixed;
+           bottom: 20px;
+           left: 50%;
+           transform: translateX(-50%);
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           background-color: #fff;
+           border-radius: 30px;
+           padding: 12px 20px; /* Reduced padding for spacing between icons and text */
+           
+           width: 250px;
+           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+       }
+       
+       .navbar a {
+           text-decoration: none;
+           font-size: 0.6rem;
+           margin-right: 3px;
+           margin-top: 5px;
+           color: black; /* Set the color of the text */
+           font-weight: 600;
+       }
+       
+       .navbar i {
+           font-size: 20px; /* Reduced icon size */
+           font-weight: 600;
+       }
+       
+       .navbar p {
+           margin: 0;
+           font-size: 10px; 
+           text-align: center; 
+           white-space: nowrap; /* Prevent text from wrapping */
+           overflow: hidden; /* Hide overflowed text */
+           text-overflow: ellipsis; /* Show ellipsis for long text */
+           
+       }
+       
+       
+
+       
+       .nav-container {
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+           width: 100%;
+           height: 100%;
+       }
+       
+       .nav-item {
+           text-align: center;
+           color: black;
+       }
+       
+       .nav-item i {
+           font-size: 24px;
+           
+       }
+       
+       .nav-item p {
+           margin: 0;
+           font-size: 12px;
+       }
+       nav li i{
+           font-size: 24px;
+           color:#000;
+       }
+
+       h1 i{
+           font-size: 18px;
+       }
+       
+@media screen and (max-width: 767px) {
+   .container {
+       background-color: #f0f1f7;
+       padding: 0;
+   }
 }

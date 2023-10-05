@@ -1,0 +1,91 @@
+ 
+
+  .header {
+    background-color: transparent;
+    color: black;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .header h1 {
+    font-size: 0.9rem;
+    margin-left: 75px;
+    display: inline;
+  }
+
+  .value {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .eth {
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: bold;
+    color: gray;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f1f7;
+    height: 80vh;
+    margin-top: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+
+  .transaction-info {
+    background-color: rgb(
+      247,
+      248,
+      248
+    );
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 90%;
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .table td,
+  .table th {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    color: black;
+    font-size: 0.8rem;
+    text-align: right;
+    font-weight: bold;
+  }
+
+  .table th {
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  .table tr:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .confirm-button {
+    background-color: #007bff;
+    width: 330px;
+    height: vh;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
