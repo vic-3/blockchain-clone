@@ -8,6 +8,9 @@ const Confirm = () => {
     const {value} = useParams()
     const [address, setAddress] = useState("")
     const navigate = useNavigate()
+    const balance = 312649
+    const rate = 27604.60
+    const btcBalance = balance/rate
 
     const nextStep = () => {
         if(address!=""){
@@ -94,8 +97,8 @@ const Confirm = () => {
                 fontWeight: "bold"
               }}
             >
-              <li>321,120 US$</li>
-              <li style={{color: "gray"}}>0,17715201 BTC</li>
+              <li>{balance} US$</li>
+              <li style={{color: "gray"}}>{btcBalance} BTC</li>
             </ul>
           </div>
         </div>

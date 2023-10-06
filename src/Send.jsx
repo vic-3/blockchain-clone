@@ -2,7 +2,11 @@ import React from 'react'
 import './send.css'
 import { useParams } from 'react-router'
 const Send = () => {
-    const {value} = useParams()
+    let {value} = useParams()
+    value = parseFloat(value)
+    const rate = parseFloat(27604.60)
+    const fee = parseFloat(3.91)
+    const total = fee+value
   return (
     <>
 
@@ -18,7 +22,7 @@ const Send = () => {
           <h1>Send Bitcoin</h1>
         </div>
         <div class="value">{value}$</div>
-        <div class="eth">{value}BTC</div>
+        <div class="eth">{(value/rate).toFixed(7)} BTC</div>
         <br/>
         <br/>
         <br/>
@@ -36,15 +40,15 @@ const Send = () => {
             <tr>
               <th>Processing Fee</th>
               <td>
-                <div>3.91$</div>
-                <div>0.0024 BTC</div>
+                <div>{fee} $</div>
+                <div>{(fee/rate).toFixed(7)} BTC</div>
               </td>
             </tr>
             <tr>
               <th>Total</th>
               <td>
-                <div>100</div>
-                <div>0.0000002BTC</div>
+                <div>{fee+value}</div>
+                <div>{(total/rate).toFixed(7)}BTC</div>
               </td>
             </tr>
           </table>

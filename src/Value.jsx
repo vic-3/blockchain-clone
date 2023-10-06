@@ -101,7 +101,7 @@ const Value = () => {
               color: "rgb(49, 48, 48)"
               }}
           >
-              17.17478799 ETH
+              17.17478799 BTC
           </p>
       </div>
       <div style={{marginLeft: "120px"}} class="btn">
