@@ -149,7 +149,7 @@ const Confirm = () => {
           <div style={{textAlign: "left", fontSize: "0.7rem", fontWeight: "bold"}}>
             <p style={{margin: "0px", marginLeft: "7px"}}>Defi Wallet</p>
             <p style={{margin: "0px", marginLeft: "7px", color: "gray"}}>
-              0.00730742 ETH
+              0.00730742 BTC
             </p>
           </div>
         </div>

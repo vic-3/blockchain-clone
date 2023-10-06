@@ -18,7 +18,7 @@ const Send = () => {
           <h1>Send Ethereum</h1>
         </div>
         <div class="value">{value}$</div>
-        <div class="eth">{value}ETH</div>
+        <div class="eth">{value}BTC</div>
         <br/>
         <br/>
         <br/>
@@ -31,20 +31,20 @@ const Send = () => {
             </tr>
             <tr>
               <th>To</th>
-              <td>Defi Wallet</td>
+              <td>Exchange</td>
             </tr>
             <tr>
               <th>Processing Fee</th>
               <td>
                 <div>3.91$</div>
-                <div>0.0024 ETH</div>
+                <div>0.0024 BTC</div>
               </td>
             </tr>
             <tr>
               <th>Total</th>
               <td>
                 <div>100</div>
-                <div>0.0000002ETH</div>
+                <div>0.0000002BTC</div>
               </td>
             </tr>
           </table>
