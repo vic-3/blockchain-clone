@@ -110,6 +110,7 @@ const Confirm = () => {
         class="security-box"
         style={{height: "0vh", display: "flex", marginTop: "5px"}}
       >
+        <center>
         <div
           style={{
             display: "flex",
@@ -134,10 +135,11 @@ const Confirm = () => {
             </ul>
           </div>
         </div>
+        </center>
       </div>
       <div>
         <br />
-        <p class="write">Only send BTC to wallets on the Biccoin network.</p>
+        <p class="write">Only send BTC to wallets on the Bitcoin network.</p>
         <p style={{marginTop: "30px"}} class="write">Or select a Wallet</p>
       </div>
 <br/>

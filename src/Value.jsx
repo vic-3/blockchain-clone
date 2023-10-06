@@ -6,6 +6,9 @@ import { useNavigate } from 'react-router'
 const Value = () => {
     const navigate = useNavigate()
     const [value, setValue] = useState("")
+    const balance = 312649
+    const rate = 27604.60
+    const btcBalance = (balance/rate).toFixed(7)
 
     const sendCrypto = (e) => {
        // console.log("working")
@@ -101,7 +104,7 @@ const Value = () => {
               color: "rgb(49, 48, 48)"
               }}
           >
-              17.17478799 BTC
+              {btcBalance} BTC
           </p>
       </div>
       <div style={{marginLeft: "120px"}} class="btn">

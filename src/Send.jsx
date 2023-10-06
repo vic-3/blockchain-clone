@@ -6,7 +6,10 @@ const Send = () => {
     value = parseFloat(value)
     const rate = parseFloat(27604.60)
     const fee = parseFloat(3.91)
-    const total = fee+value
+    
+    const btcBalance=value.toFixed(7)
+    const usdBalance=(value*rate)
+    const total = fee+usdBalance
   return (
     <>
 
@@ -21,8 +24,8 @@ const Send = () => {
           ></i>
           <h1>Send Bitcoin</h1>
         </div>
-        <div class="value">{value}$</div>
-        <div class="eth">{(value/rate).toFixed(7)} BTC</div>
+        <div class="value">{usdBalance}$</div>
+        <div class="eth">{btcBalance} BTC</div>
         <br/>
         <br/>
         <br/>
@@ -47,7 +50,7 @@ const Send = () => {
             <tr>
               <th>Total</th>
               <td>
-                <div>{fee+value}</div>
+                <div>{fee+usdBalance}</div>
                 <div>{(total/rate).toFixed(7)}BTC</div>
               </td>
             </tr>

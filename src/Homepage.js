@@ -3,6 +3,9 @@ import { NavLink } from 'react-router-dom'
 
 
 const Home = () => {
+    const balance = 312649
+    const rate = 27604.60
+    const btcBalance = (balance/rate).toFixed(7)
   return (
    <>
    
@@ -14,7 +17,7 @@ const Home = () => {
         <main style={{textAlign: "center"}}>
             <div className="price-container">
                 <center>
-                <h1 style={{marginBottom: "0px;"}} id="price">US$1.99 <i style={{color: "rgb(185, 177, 177)"}} className="fas fa-eye"></i></h1>
+                <h1 style={{marginBottom: "0px;"}} id="price">US$ {balance} <i style={{color: "rgb(185, 177, 177)"}} className="fas fa-eye"></i></h1>
             </center>
             </div>
             <h5 style={{color: "green", marginTop: "0px"}}>US$0.02 (1.4%)</h5>
