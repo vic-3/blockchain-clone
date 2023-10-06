@@ -15,7 +15,7 @@ const Send = () => {
             class="fa fa-angle-left"
             aria-hidden="true"
           ></i>
-          <h1>Send Ethereum</h1>
+          <h1>Send Bitcoin</h1>
         </div>
         <div class="value">{value}$</div>
         <div class="eth">{value}BTC</div>

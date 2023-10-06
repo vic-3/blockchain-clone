@@ -81,7 +81,7 @@ const Confirm = () => {
                 fontWeight: "bold"
               }}
             >
-              Ethereum
+              Bitcoin
             </p>
           </div>
 
@@ -95,7 +95,7 @@ const Confirm = () => {
               }}
             >
               <li>321,120 US$</li>
-              <li style={{color: "gray"}}>0,17715201 ETH</li>
+              <li style={{color: "gray"}}>0,17715201 BTC</li>
             </ul>
           </div>
         </div>
@@ -134,7 +134,7 @@ const Confirm = () => {
       </div>
       <div>
         <br />
-        <p class="write">Only send ETH to wallets on the Ethereum network.</p>
+        <p class="write">Only send BTC to wallets on the Biccoin network.</p>
         <p style={{marginTop: "30px"}} class="write">Or select a Wallet</p>
       </div>
 <br/>
