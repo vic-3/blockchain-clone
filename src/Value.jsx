@@ -62,7 +62,7 @@ const Value = () => {
             marginTop: "0px"
           }}
         >
-          To:DeFi Wallet
+          To: Exchange
         </p>
       </div>
       <div style={{display: "flex"}}>
@@ -75,7 +75,7 @@ const Value = () => {
     </div>
 
     <div class="display" style={{marginLeft: "100px", marginTop: "90px"}}>
-      <span id="numericValue">{value}</span> ETH
+      <span id="numericValue">{value}</span> BTC
       <i style={{color: "rgb(4, 138, 138)"}} class="fa fa-sort" aria-hidden="true"></i>
   </div>
   
@@ -101,7 +101,7 @@ const Value = () => {
               color: "rgb(49, 48, 48)"
               }}
           >
-              0.17478799 ETH
+              17.17478799 ETH
           </p>
       </div>
       <div style={{marginLeft: "120px"}} class="btn">
