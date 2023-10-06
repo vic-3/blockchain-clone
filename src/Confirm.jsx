@@ -138,6 +138,7 @@ const Confirm = () => {
         <p style={{marginTop: "30px"}} class="write">Or select a Wallet</p>
       </div>
 <br/>
+<center>
       <div class="security-box" style={{   height: "3vh"}}>
         <div style={{display: "flex", width: "100%", textAlign: "center"}}>
           <i
@@ -168,6 +169,7 @@ const Confirm = () => {
           </div>
         </div>
       </div>
+      </center>
       <br />
       <br />
        
