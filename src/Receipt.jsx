@@ -45,8 +45,8 @@ const Receipt = () => {
                     </div>
                     <div className="r" style={{textAlign: "right"}}>
                         <ul style={{listStyleType: "none", padding: "0"}}>
-                            <li className="bold-text" style={{fontWeight: "bold", fontSize: "0.98rem"}}>US$ {value}</li>
-                            <li className="colored-text" style={{color: "#646363", fontSize: "0.98rem"}}>{(value/rate).toFixed(7)} BTC</li>
+                            <li className="bold-text" style={{fontWeight: "bold", fontSize: "0.98rem"}}>$ {(value*rate.toFixed(7))}</li>
+                            <li className="colored-text" style={{color: "#646363", fontSize: "0.98rem"}}>{value} BTC</li>
                         </ul>
                     </div>
                     
